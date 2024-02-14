@@ -33,10 +33,16 @@
     <label for="fecha">Fecha</label>
     <input type="date" id="fecha" name="fecha"><br><br>
 
-    <label for="opcion1">Masculino</label>
-    <input type="checkbox" id="opcion1" name="opcion1" value="masculino">
-    <label for="opcion2">Femenino</label>
-    <input type="checkbox" id="opcion2" name="opcion2" value="femenino"><br><br>
+    <form>
+      <p>Selecciona un género:</p>
+      <input type="radio" id="hombre" name="genero" value="hombre">
+      <label for="hombre">Hombre</label><br>
+      <input type="radio" id="mujer" name="genero" value="mujer">
+      <label for="mujer">Mujer</label><br>
+      <input type="radio" id="otro" name="genero" value="otro">
+      <label for="otro">Otro</label>
+
+    </form>
 
     <label for="archivos">Elegir archivos</label>
     <input type="file" id="archivos" name="archivos" accept="Image/png,.jpg" multiple><br><br>
