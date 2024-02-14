@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Contacto</title>
+</head>
+
+<body>
+
+  <form action="submit_form.php" method="post">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="podemos ingresar el nombre" required><br><br>
+
+    <label for="telefono">Teléfono</label>
+    <input type="text" id="telefono" name="telefono" required><br><br>
+
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="asunto">Asunto</label>
+    <textarea id="asunto" name="asunto" required></textarea><br><br>
+
+    <label for="ciudad">Ciudad</label>
+    <select id="ciudad" name="ciudad">
+      <option value="bogota">Bogotá</option>
+      <option value="Bucarmanga">Bucarmanga</option>
+      <option value="Cali">Cali</option>
+      <option value="otro">Otro</option>
+    </select><br><br>
+
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" name="fecha"><br><br>
+
+    <label for="opcion1">Masculino</label>
+    <input type="checkbox" id="opcion1" name="opcion1" value="masculino">
+    <label for="opcion2">Femenino</label>
+    <input type="checkbox" id="opcion2" name="opcion2" value="femenino"><br><br>
+
+    <label for="archivos">Elegir archivos</label>
+    <input type="file" id="archivos" name="archivos" accept="Image/png,.jpg" multiple><br><br>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+</body>
+
+</html>
